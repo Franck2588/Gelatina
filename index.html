@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,9 +8,72 @@
   <!-- !bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/gelatinas-theme.css" />
   <!-- !Glide.js Css CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" />
-  <title>E-Commerce | Home</title>
+  <title>Delicias Gelatinosas | Gelatinas Artesanales</title>
+  <style>
+    :root {
+      --primary-color: #FF69B4;
+      --secondary-color: #FFB6C1;
+      --accent-color: #FF1493;
+      --light-pink: #FFF0F5;
+      --dark-text: #4A4A4A;
+    }
+    
+    .global-notification {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      animation: slideGradient 3s ease infinite;
+    }
+    
+    @keyframes slideGradient {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    .logo {
+      font-weight: 800;
+      font-size: 24px;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .slider-title {
+      color: var(--accent-color);
+      font-weight: 600;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      border: none;
+      transition: transform 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    }
+    
+    .category-image {
+      transition: transform 0.3s ease;
+    }
+    
+    .category-item:hover .category-image {
+      transform: scale(1.1) rotate(5deg);
+    }
+    
+    .product-item {
+      transition: transform 0.3s ease;
+    }
+    
+    .product-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+    }
+  </style>
 </head>
 
 <body>
@@ -19,8 +82,8 @@
     <div class="global-notification">
       <div class="container">
         <p>
-          SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
-          DELIVERY - OFF 50%! <a href="shop.html">SHOP NOW</a>
+          🍮 ¡PROMOCIÓN ESPECIAL! TODAS LAS GELATINAS CON 20% DE DESCUENTO - ENVÍO GRATIS EN PEDIDOS MAYORES A $500 
+          <a href="shop.html" style="color: white; text-decoration: underline;">¡ORDENAR AHORA!</a>
         </p>
       </div>
     </div>
@@ -31,70 +94,58 @@
             <i class="bi bi-list" id="btn-menu"></i>
           </div>
           <div class="header-left">
-            <a href="/" class="logo">LOGO</a>
+            <a href="index.html" class="logo">🍮 Delicias Gelatinosas</a>
           </div>
           <div class="header-center" id="sidebar">
             <nav class="navigation">
               <ul class="menu-list">
                 <li class="menu-list-item">
-                  <a href="/" class="menu-link active">Home
+                  <a href="index.html" class="menu-link active">Inicio
                     <i class="bi bi-chevron-down"></i>
                   </a>
                   <div class="menu-dropdown-wrapper">
                     <ul class="menu-dropdown-content">
-                      <li><a href="#">Home Clean</a></li>
-                      <li><a href="#">Home Collection</a></li>
-                      <li><a href="#">Home Minimal</a></li>
-                      <li><a href="#">Home Modern</a></li>
-                      <li><a href="#">Home Parallax</a></li>
-                      <li><a href="#">Home Strong</a></li>
-                      <li><a href="#">Home Style</a></li>
-                      <li><a href="#">Home Unique</a></li>
-                      <li><a href="#">Home RTL</a></li>
+                      <li><a href="#">Nosotros</a></li>
+                      <li><a href="#">Galería</a></li>
+                      <li><a href="#">Testimonios</a></li>
+                      <li><a href="#">Promociones</a></li>
                     </ul>
                   </div>
                 </li>
                 <li class="menu-list-item megamenu-wrapper">
-                  <a href="shop.html" class="menu-link">Shop
+                  <a href="shop.html" class="menu-link">Catálogo
                     <i class="bi bi-chevron-down"></i>
                   </a>
                   <div class="menu-dropdown-wrapper">
                     <div class="menu-dropdown-megamenu">
                       <div class="megamenu-links">
                         <div class="megamenu-products">
-                          <h3 class="megamenu-product-title">Shop Style</h3>
+                          <h3 class="megamenu-product-title">Por Categoría</h3>
                           <ul class="megamenu-menu-list">
-                            <li><a href="#">Shop Standart</a></li>
-                            <li><a href="#">Shop Full</a></li>
-                            <li><a href="#">Shop Only Categories</a></li>
-                            <li><a href="#">Shop Image Categories</a></li>
-                            <li><a href="#">Shop Sub Categories</a></li>
-                            <li><a href="#">Shop List</a></li>
-                            <li><a href="#">Hover Style 1</a></li>
-                            <li><a href="#">Hover Style 2</a></li>
-                            <li><a href="#">Hover Style 3</a></li>
+                            <li><a href="#">Gelatinas Individuales</a></li>
+                            <li><a href="#">Gelatinas Decoradas</a></li>
+                            <li><a href="#">Gelatinas Premium</a></li>
+                            <li><a href="#">Gelatinas Saludables</a></li>
+                            <li><a href="#">Para Adultos</a></li>
                           </ul>
                         </div>
                         <div class="megamenu-products">
-                          <h3 class="megamenu-product-title">
-                            Filter Layout
-                          </h3>
+                          <h3 class="megamenu-product-title">Por Ocasión</h3>
                           <ul class="megamenu-menu-list">
-                            <li><a href="#">Sidebar</a></li>
-                            <li><a href="#">Filter Side Out</a></li>
-                            <li><a href="#">Filter Dropdown</a></li>
-                            <li><a href="#">Filter Drawer</a></li>
+                            <li><a href="#">Cumpleaños</a></li>
+                            <li><a href="#">Bodas</a></li>
+                            <li><a href="#">Baby Shower</a></li>
+                            <li><a href="#">Eventos Corporativos</a></li>
+                            <li><a href="#">Día del Niño</a></li>
                           </ul>
                         </div>
                         <div class="megamenu-products">
-                          <h3 class="megamenu-product-title">Shop Loader</h3>
+                          <h3 class="megamenu-product-title">Por Tamaño</h3>
                           <ul class="megamenu-menu-list">
-                            <li><a href="#">Shop Pagination</a></li>
-                            <li><a href="#">Shop Infinity</a></li>
-                            <li><a href="#">Shop Load More</a></li>
-                            <li><a href="#">Cart Modal</a></li>
-                            <li><a href="#">Cart Drawer</a></li>
-                            <li><a href="#">Cart Page</a></li>
+                            <li><a href="#">Individual (1-2 personas)</a></li>
+                            <li><a href="#">Familiar (6-8 personas)</a></li>
+                            <li><a href="#">Fiesta (10-15 personas)</a></li>
+                            <li><a href="#">Gran Evento (20+ personas)</a></li>
                           </ul>
                         </div>
                       </div>
@@ -103,22 +154,22 @@
                           <img src="img/mega-menu.jpg" alt="" />
                         </a>
                         <h3 class="megamenu-single-title">
-                          JOIN THE LAYERING GANG
+                          ¡PERSONALIZA TU GELATINA!
                         </h3>
                         <h4 class="megamenu-single-subtitle">
-                          Suspendisse faucibus nunc et pellentesque
+                          Crea diseños únicos para tus eventos especiales
                         </h4>
-                        <a href="#" class="megamenu-single-button btn btn-sm">Shop Now</a>
+                        <a href="#" class="megamenu-single-button btn btn-sm">Personalizar</a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="menu-list-item">
-                  <a href="blog.html" class="menu-link">Blog
+                  <a href="blog.html" class="menu-link">Recetas & Tips
                   </a>
                 </li>
                 <li class="menu-list-item">
-                  <a href="contact.html" class="menu-link">Contact</a>
+                  <a href="contact.html" class="menu-link">Contacto</a>
                 </li>
               </ul>
             </nav>
@@ -126,17 +177,17 @@
           </div>
           <div class="header-right">
             <div class="header-right-links">
-              <a href="account.html">
+              <a href="account.html" title="Mi Cuenta">
                 <i class="bi bi-person"></i>
               </a>
-              <button class="search-button">
+              <button class="search-button" title="Buscar">
                 <i class="bi bi-search"></i>
               </button>
-              <a href="#">
+              <a href="#" title="Favoritos">
                 <i class="bi bi-heart"></i>
               </a>
               <div class="header-cart">
-                <a href="cart.html" class="header-cart-link">
+                <a href="cart.html" class="header-cart-link" title="Carrito">
                   <i class="bi bi-bag"></i>
                   <span class="header-cart-count">0</span>
                 </a>
@@ -152,21 +203,19 @@
   <!-- ! modal search start -->
   <div class="modal-search">
     <div class="modal-wrapper">
-      <h3 class="modal-title">Search for products</h3>
+      <h3 class="modal-title">Buscar gelatinas</h3>
       <p class="modal-text">
-        Start typing to see products you are looking for.
+        Escribe el sabor, ocasión o tipo de gelatina que buscas.
       </p>
       <div class="search">
-        <input type="text" placeholder="Search a product" />
+        <input type="text" placeholder="Ej: fresa, cumpleaños, mosaico..." />
         <button><i class="bi bi-search"></i></button>
       </div>
-      </form>
       <div class="search-result">
         <div class="search-heading">
-          <h3>RESULT FROM PRODUCT</h3>
+          <h3>RESULTADOS</h3>
         </div>
         <div class="results">
-
         </div>
       </div>
       <i class="bi bi-x-circle" id="close-modal-search"></i>
@@ -186,17 +235,18 @@
       <div class="popup-wrapper">
         <div class="popup-content">
           <div class="popup-title">
-            <h3>NEWSLETTER</h3>
+            <h3>🍮 ¡SUSCRÍBETE!</h3>
           </div>
           <p class="popup-text">
-            Sign up to our newsletter and get exclusive deals you won find any where else straight to your inbox!
+            Recibe recetas exclusivas, promociones especiales y descuentos directamente en tu correo. 
+            ¡Primer pedido con 15% de descuento!
           </p>
           <form class="popup-form">
-            <input type="text" placeholder="Enter Email Address Here">
-            <button class="btn btn-primary">SUBSCRIBE</button>
+            <input type="email" placeholder="Ingresa tu correo electrónico">
+            <button class="btn btn-primary">SUSCRIBIRME</button>
             <label>
               <input type="checkbox">
-              <span>Don't show this popup again</span>
+              <span>No mostrar este mensaje nuevamente</span>
             </label>
           </form>
         </div>
@@ -213,9 +263,9 @@
           <img src="img/slider/slider1.jpg" class="img-fluid" alt="" />
         </div>
         <div class="container">
-          <p class="slider-title">SUMMER 2022</p>
-          <h2 class="slider-heading">Save up to 70%</h2>
-          <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+          <p class="slider-title">✨ TEMPORADA 2025</p>
+          <h2 class="slider-heading">Gelatinas Artesanales<br>Hechas con Amor</h2>
+          <a href="shop.html" class="btn btn-lg btn-primary">Ver Catálogo</a>
         </div>
       </div>
       <div class="slider-item fade">
@@ -223,9 +273,9 @@
           <img src="img/slider/slider2.jpg" class="img-fluid" alt="" />
         </div>
         <div class="container">
-          <p class="slider-title">SUMMER 2022</p>
-          <h2 class="slider-heading">Save up to 70%</h2>
-          <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+          <p class="slider-title">🎉 EVENTOS ESPECIALES</p>
+          <h2 class="slider-heading">Personaliza tu<br>Gelatina Perfecta</h2>
+          <a href="shop.html" class="btn btn-lg btn-primary">Personalizar</a>
         </div>
       </div>
       <div class="slider-item fade">
@@ -233,9 +283,9 @@
           <img src="img/slider/slider3.jpg" class="img-fluid" alt="" />
         </div>
         <div class="container">
-          <p class="slider-title">SUMMER 2022</p>
-          <h2 class="slider-heading">Save up to 70%</h2>
-          <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+          <p class="slider-title">🍓 100% NATURALES</p>
+          <h2 class="slider-heading">Sin Conservadores<br>Ingredientes Premium</h2>
+          <a href="shop.html" class="btn btn-lg btn-primary">Descubre Más</a>
         </div>
       </div>
       <div class="slider-buttons">
@@ -265,45 +315,45 @@
   <section class="categories">
     <div class="container">
       <div class="section-title">
-        <h2>All Categories</h2>
-        <p>Summer Collection New Modern Design</p>
+        <h2>Nuestras Especialidades</h2>
+        <p>Deliciosas creaciones para cada ocasión</p>
       </div>
 
       <ul class="category-list">
         <li class="category-item">
           <a href="#">
             <img src="img/categories/categories1.png" alt="" class="category-image" />
-            <span class="category-title">Smartphone</span>
+            <span class="category-title">Gelatinas 326<br>Clásicas</span>
           </a>
         </li>
         <li class="category-item">
           <a href="#">
             <img src="img/categories/categories2.png" alt="" class="category-image" />
-            <span class="category-title">Watches</span>
+            <span class="category-title">Mosaico</span>
           </a>
         </li>
         <li class="category-item">
           <a href="#">
             <img src="img/categories/categories3.png" alt="" class="category-image" />
-            <span class="category-title">Electronics</span>
+            <span class="category-title">3 Leches</span>
           </a>
         </li>
         <li class="category-item">
           <a href="#">
             <img src="img/categories/categories4.png" alt="" class="category-image" />
-            <span class="category-title">Furnitures</span>
+            <span class="category-title">Decoradas</span>
           </a>
         </li>
         <li class="category-item">
           <a href="#">
-            <img src="img/categories/categories5.png" alt="" class="category-image" />
-            <span class="category-title">Collections</span>
+            <img src="img/categories/categories5.jfif" alt="" class="category-image" />
+            <span class="category-title">Personalizadas</span>
           </a>
         </li>
         <li class="category-item">
           <a href="#">
             <img src="img/categories/categories6.png" alt="" class="category-image" />
-            <span class="category-title">Fashion</span>
+            <span class="category-title">Saludables</span>
           </a>
         </li>
       </ul>
@@ -315,17 +365,20 @@
   <section class="products">
     <div class="container">
       <div class="section-title">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Modern Design</p>
+        <h2>🌟 Más Vendida</h2>
+        <p>Las favoritas de nuestros clientes</p>
       </div>
       <div class="product-wrapper product-carousel">
         <div class="glide__track" data-glide-el="track">
           <ul class="product-list glide__slides" id="product-list">
-            <li class="product-item glide__slide">
+            
+            <!-- Los productos se cargarán dinámicamente desde data.json -->
+             <li class="product-item glide__slide" style="width: 135px; margin-left: 10px; margin-right: 10px; align-items: center;">
+              
               <div class="product-image">
                 <a href="#">
-                  <img src="img/products/product1/1.png" alt="" class="img1" />
-                  <img src="img/products/product1/2.png" alt="" class="img2" />
+                  <img src="img/products/product1/1.jpg" alt="" class="img1" />
+                  <img src="img/products/product1/2.jfif" alt="" class="img2" />
                 </a>
               </div>
               <div class="product-info">
@@ -368,6 +421,8 @@
                 </div>
               </div>
             </li>
+            
+          </ul>
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
@@ -389,29 +444,29 @@
       <div class="campaigns-wrapper">
         <div class="campaign-item">
           <h3 class="campaign-title">
-            Fashion Month <br />
-            Ready in Capital <br />
-            Shop
+            Gelatinas para<br />
+            Cumpleaños<br />
+            Infantiles
           </h3>
           <p class="campaing-desc">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor
+            Diseños coloridos y divertidos que harán sonreír a los más pequeños
           </p>
           <a href="#" class="btn btn-primary">
-            View All
+            Ver Más
             <i class="bi bi-arrow-right"></i>
           </a>
         </div>
         <div class="campaign-item">
           <h3 class="campaign-title">
-            Fashion Month <br />
-            Ready in Capital <br />
-            Shop
+            Eventos<br />
+            Corporativos<br />
+            Elegantes
           </h3>
           <p class="campaing-desc">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor
+            Presentaciones sofisticadas para impresionar a tus invitados
           </p>
           <a href="#" class="btn btn-primary">
-            View All
+            Ver Más
             <i class="bi bi-arrow-right"></i>
           </a>
         </div>
@@ -419,29 +474,29 @@
       <div class="campaigns-wrapper">
         <div class="campaign-item">
           <h3 class="campaign-title">
-            Fashion Month <br />
-            Ready in Capital <br />
-            Shop
+            Bodas y<br />
+            XV Años<br />
+            Especiales
           </h3>
           <p class="campaing-desc">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor
+            Creaciones únicas para los días más importantes de tu vida
           </p>
           <a href="#" class="btn btn-primary">
-            View All
+            Ver Más
             <i class="bi bi-arrow-right"></i>
           </a>
         </div>
         <div class="campaign-item">
           <h3 class="campaign-title">
-            Fashion Month <br />
-            Ready in Capital <br />
-            Shop
+            Baby Shower<br />
+            Adorables<br />
+            Diseños
           </h3>
           <p class="campaing-desc">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit dolor
+            Dulces creaciones para celebrar la llegada del bebé
           </p>
           <a href="#" class="btn btn-primary">
-            View All
+            Ver Más
             <i class="bi bi-arrow-right"></i>
           </a>
         </div>
@@ -454,59 +509,13 @@
   <section class="products">
     <div class="container">
       <div class="section-title">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection New Modern Design</p>
+        <h2>🆕 Nuevos Sabores</h2>
+        <p>Descubre nuestras últimas creaciones</p>
       </div>
       <div class="product-wrapper product-carousel2">
         <div class="glide__track" data-glide-el="track">
           <ul class="product-list glide__slides" id="product-list-2">
-            <li class="product-item glide__slide">
-              <div class="product-image">
-                <a href="#">
-                  <img src="img/products/product1/1.png" alt="" class="img1" />
-                  <img src="img/products/product1/2.png" alt="" class="img2" />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title"> Analogue Resin Strap </a>
-                <ul class="product-star">
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                  </li>
-                  <li>
-                    <i class="bi bi-star-half"></i>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165</span>
-                </div>
-                <span class="product-discount"> -17% </span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
+            <!-- Los productos se cargarán dinámicamente -->
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
@@ -526,8 +535,8 @@
   <section class="blogs">
     <div class="container">
       <div class="section-title">
-        <h2>From Our Blog</h2>
-        <p>Summer Collection New Modern Design</p>
+        <h2>Tips & Recetas</h2>
+        <p>Aprende secretos de la gelatina perfecta</p>
       </div>
       <ul class="blog-list">
         <li class="blog-item">
@@ -536,15 +545,15 @@
           </a>
           <div class="blog-info">
             <div class="blog-info-top">
-              <span>25 Feb, 2021</span>
+              <span>15 Sep, 2025</span>
               -
-              <span>0 Comments</span>
+              <span>24 Comentarios</span>
             </div>
             <div class="blog-info-center">
-              <a href="blog.html"> Aliquam hendrerit mi metus </a>
+              <a href="blog.html">Cómo conservar tu gelatina fresca por más tiempo</a>
             </div>
             <div class="blog-info-bottom">
-              <a href="blog.html">Read More</a>
+              <a href="blog.html">Leer Más</a>
             </div>
           </div>
         </li>
@@ -554,15 +563,15 @@
           </a>
           <div class="blog-info">
             <div class="blog-info-top">
-              <span>25 Feb, 2021</span>
+              <span>10 Sep, 2025</span>
               -
-              <span>0 Comments</span>
+              <span>18 Comentarios</span>
             </div>
             <div class="blog-info-center">
-              <a href="blog.html"> Aliquam hendrerit mi metus </a>
+              <a href="blog.html">5 ideas creativas para decorar gelatinas</a>
             </div>
             <div class="blog-info-bottom">
-              <a href="blog.html">Read More</a>
+              <a href="blog.html">Leer Más</a>
             </div>
           </div>
         </li>
@@ -572,15 +581,15 @@
           </a>
           <div class="blog-info">
             <div class="blog-info-top">
-              <span>25 Feb, 2021</span>
+              <span>5 Sep, 2025</span>
               -
-              <span>0 Comments</span>
+              <span>32 Comentarios</span>
             </div>
             <div class="blog-info-center">
-              <a href="blog.html"> Aliquam hendrerit mi metus </a>
+              <a href="blog.html">Beneficios de la grenetina para tu salud</a>
             </div>
             <div class="blog-info-bottom">
-              <a href="blog.html">Read More</a>
+              <a href="blog.html">Leer Más</a>
             </div>
           </div>
         </li>
@@ -589,54 +598,15 @@
   </section>
   <!-- ! blogs end -->
 
-  <!-- ! brands start  -->
-  <section class="brands">
-    <div class="container">
-      <ul class="brand-list">
-        <li class="brand-item">
-          <a href="#">
-            <img src="img/brands/brand1.png" alt="" />
-          </a>
-        </li>
-        <li class="brand-item">
-          <a href="#">
-            <img src="img/brands/brand2.png" alt="" />
-          </a>
-        </li>
-        <li class="brand-item">
-          <a href="#">
-            <img src="img/brands/brand3.png" alt="" />
-          </a>
-        </li>
-        <li class="brand-item">
-          <a href="#">
-            <img src="img/brands/brand4.png" alt="" />
-          </a>
-        </li>
-        <li class="brand-item">
-          <a href="#">
-            <img src="img/brands/brand5.png" alt="" />
-          </a>
-        </li>
-        <li class="brand-item">
-          <a href="#">
-            <img src="img/brands/brand1.png" alt="" />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- ! brands end  -->
-
   <!-- ! campaign single start -->
   <section class="campaign-single">
     <div class="container">
       <div class="campaign-wrapper">
-        <h2>New Season Sale</h2>
-        <strong>40% OFF</strong>
+        <h2>🎊 Promoción de Temporada</h2>
+        <strong>20% OFF</strong>
         <span></span>
-        <a href="#" class="btn btn-lg">
-          SHOP NOW
+        <a href="shop.html" class="btn btn-lg">
+          ORDENAR AHORA
           <i class="bi bi-arrow-right"></i>
         </a>
       </div>
@@ -651,29 +621,29 @@
         <li class="policy-item">
           <i class="bi bi-truck"></i>
           <div class="policy-texts">
-            <strong>FREE DELIVERY</strong>
-            <span>From $59.89</span>
+            <strong>ENVÍO GRATIS</strong>
+            <span>En pedidos mayores a $500</span>
           </div>
         </li>
         <li class="policy-item">
-          <i class="bi bi-headset"></i>
+          <i class="bi bi-whatsapp"></i>
           <div class="policy-texts">
-            <strong>SUPPORT 24/7</strong>
-            <span>Online 24 hours</span>
+            <strong>WHATSAPP 24/7</strong>
+            <span>Respuesta inmediata</span>
           </div>
         </li>
         <li class="policy-item">
-          <i class="bi bi-arrow-clockwise"></i>
+          <i class="bi bi-snow"></i>
           <div class="policy-texts">
-            <strong>30 DAYS RETURN</strong>
-            <span>Simply return it within 30 days</span>
+            <strong>FRESCURA GARANTIZADA</strong>
+            <span>Refrigeración en todo momento</span>
           </div>
         </li>
         <li class="policy-item">
           <i class="bi bi-credit-card"></i>
           <div class="policy-texts">
-            <strong>PAYMENT METHOD</strong>
-            <span>Secure Payment</span>
+            <strong>PAGO SEGURO</strong>
+            <span>Efectivo, tarjeta o transferencia</span>
           </div>
         </li>
       </ul>
@@ -690,45 +660,43 @@
             <div class="footer-subscribe">
               <div class="footer-subscribe-top">
                 <h3 class="subscribe-title">
-                  Get our emails for info on new items, sales and more.
+                  ¡Suscríbete y recibe ofertas exclusivas!
                 </h3>
                 <p class="subscribe-desc">
-                  We'll email you a voucher worth $10 off your first order
-                  over $50.
+                  Te enviaremos un cupón de $50 de descuento en tu primera compra mayor a $300.
                 </p>
               </div>
               <div class="footer-subscribe-bottom">
                 <form>
-                  <input type="text" placeholder="enter your email addres" />
-                  <button class="btn">Subscribe</button>
+                  <input type="email" placeholder="Ingresa tu correo electrónico" />
+                  <button class="btn">Suscribirme</button>
                 </form>
                 <p class="privacy-text">
-                  By subscribing you agree to our
-                  <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a>
+                  Al suscribirte aceptas nuestros
+                  <a href="#">Términos y Condiciones y Política de Privacidad.</a>
                 </p>
               </div>
             </div>
           </div>
           <div class="contact-wrapper">
             <div class="footer-contact-top">
-              <h3 class="contact-title">Need help? <br>
-                (+90) 123 456 78 90
+              <h3 class="contact-title">¿Necesitas ayuda? <br>
+                📱 (+52) 123 456 78 90
               </h3>
-              <p class="contact-desc">We are available 8:00am – 7:00pm
+              <p class="contact-desc">Disponibles de Lunes a Domingo 9:00am – 8:00pm
               </p>
             </div>
             <div class="footer-contact-bottom">
               <div class="download-app">
-                <a href="#">
-                  <img src="img/footer/app-store.png" alt="">
+                <a href="#" style="display: inline-block; padding: 10px 20px; background: #25D366; color: white; border-radius: 8px; text-decoration: none; margin: 5px;">
+                  <i class="bi bi-whatsapp"></i> WhatsApp
                 </a>
-                <a href="#">
-                  <img src="img/footer/google-play.png" alt="">
+                <a href="#" style="display: inline-block; padding: 10px 20px; background: #E4405F; color: white; border-radius: 8px; text-decoration: none; margin: 5px;">
+                  <i class="bi bi-instagram"></i> Instagram
                 </a>
               </div>
               <p class="privacy-text">
-                <strong>Shopping App:</strong> Try our View in Your Room feature, manage registries and save payment
-                info.
+                <strong>Síguenos:</strong> Comparte fotos de tu gelatina y participa en sorteos mensuales.
               </p>
             </div>
           </div>
@@ -740,96 +708,96 @@
         <div class="footer-widgets">
           <div class="brand-info">
             <div class="footer-logo">
-              <a href="/" class="logo">LOGO</a>
+              <a href="index.html" class="logo">🍮 Delicias Gelatinosas</a>
             </div>
             <div class="footer-desc">
-              Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis in
-              termapol.
+              Creamos gelatinas artesanales con ingredientes 100% naturales y de la más alta calidad. 
+              Cada gelatina es una obra de arte comestible hecha con amor.
             </div>
             <div class="footer-contact">
               <p>
-                <a href="tel:123456789">(+800) 1234 5678 90</a> -
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="tel:+521234567890">📱 (+52) 123 456 78 90</a> -
+                <a href="mailto:pedidos@deliciasgelatinosas.com">✉️ pedidos@deliciasgelatinosas.com</a>
               </p>
             </div>
           </div>
           <div class="widget-nav-menu">
-            <h4>Information</h4>
+            <h4>Información</h4>
             <ul class="menu-list">
               <li>
-                <a href="#">About Us</a>
+                <a href="#">Sobre Nosotros</a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Cómo Ordenar</a>
               </li>
               <li>
-                <a href="#">Returns Policy</a>
+                <a href="#">Política de Devoluciones</a>
               </li>
               <li>
-                <a href="#">Shipping Policy</a>
+                <a href="#">Tiempos de Entrega</a>
               </li>
               <li>
-                <a href="#">Dropshipping</a>
+                <a href="#">Preguntas Frecuentes</a>
               </li>
             </ul>
           </div>
           <div class="widget-nav-menu">
-            <h4>Account</h4>
+            <h4>Mi Cuenta</h4>
             <ul class="menu-list">
               <li>
-                <a href="#">Dashboard</a>
+                <a href="#">Panel de Control</a>
               </li>
               <li>
-                <a href="#">My Orders</a>
+                <a href="#">Mis Pedidos</a>
               </li>
               <li>
-                <a href="#">My Wishlist</a>
+                <a href="#">Mis Favoritos</a>
               </li>
               <li>
-                <a href="#">Account details</a>
+                <a href="#">Datos de Cuenta</a>
               </li>
               <li>
-                <a href="#">Track My Orders</a>
+                <a href="#">Rastrear Pedido</a>
               </li>
             </ul>
           </div>
           <div class="widget-nav-menu">
-            <h4>Shop</h4>
+            <h4>Catálogo</h4>
             <ul class="menu-list">
               <li>
-                <a href="#">Affiliate</a>
+                <a href="#">Más Vendidas</a>
               </li>
               <li>
-                <a href="#">Bestsellers</a>
+                <a href="#">Nuevos Sabores</a>
               </li>
               <li>
-                <a href="#">Discount</a>
+                <a href="#">Ofertas</a>
               </li>
               <li>
-                <a href="#">Latest Products</a>
+                <a href="#">Personalizadas</a>
               </li>
               <li>
-                <a href="#">Sale Products</a>
+                <a href="#">Eventos Especiales</a>
               </li>
             </ul>
           </div>
           <div class="widget-nav-menu">
-            <h4>Categories</h4>
+            <h4>Categorías</h4>
             <ul class="menu-list">
               <li>
-                <a href="#">Women</a>
+                <a href="#">Gelatinas Clásicas</a>
               </li>
               <li>
-                <a href="#">Men</a>
+                <a href="#">Mosaico</a>
               </li>
               <li>
-                <a href="#">Bags</a>
+                <a href="#">3 Leches</a>
               </li>
               <li>
-                <a href="#">Outerwear</a>
+                <a href="#">Decoradas</a>
               </li>
               <li>
-                <a href="#">Shoes</a>
+                <a href="#">Saludables</a>
               </li>
             </ul>
           </div>
@@ -842,8 +810,8 @@
           <div class="footer-copyright">
             <div class="site-copyright">
               <p>
-                Copyright 2022 © E-Commerce Theme. All right reserved.
-                Powered By Sinan Sarıçayır.
+                Copyright 2025 © Delicias Gelatinosas. Todos los derechos reservados.
+                Hecho con 💖 y mucha grenetina.
               </p>
             </div>
             <a href="#">
@@ -852,13 +820,13 @@
             <div class="footer-menu">
               <ul class="footer-menu-list">
                 <li class="list-item">
-                  <a href="#">Privacy Policy</a>
+                  <a href="#">Política de Privacidad</a>
                 </li>
                 <li class="list-item">
-                  <a href="#">Terms and Conditions</a>
+                  <a href="#">Términos y Condiciones</a>
                 </li>
                 <li class="list-item">
-                  <a href="#">Returns Policy</a>
+                  <a href="#">Política de Devoluciones</a>
                 </li>
               </ul>
             </div>

@@ -65,14 +65,64 @@
       transform: scale(1.1) rotate(5deg);
     }
     
-    .product-item {
-      transition: transform 0.3s ease;
-    }
-    
-    .product-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
-    }
+    /* Contenedor de productos en cuadrícula */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 3-5 columnas según el espacio */
+  gap: 20px; /* espacio entre productos */
+  padding: 0;
+  list-style: none;
+}
+
+/* Cada producto ocupa solo el espacio necesario */
+.product-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del producto */
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Precios y botones */
+.product-info {
+  padding: 10px;
+}
+
+.product-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.product-links button,
+.product-links a {
+  border: none;
+  background: #f3f3f3;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.product-links button:hover,
+.product-links a:hover {
+  background: #ffd6d6;
+}
+
   </style>
 </head>
 
